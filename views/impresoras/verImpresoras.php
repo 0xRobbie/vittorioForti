@@ -1,0 +1,24 @@
+<?php require_once './views/error.php'; comprobarAcceso(); ?> 
+ 
+<div class="table text-center"> 
+     
+    <table class="table table-striped table-light"> 
+        <thead> 
+            <tr> 
+                <th>idImpresoras</th> 
+                <th>modelo</th> 
+                <th>idInsumos</th> 
+            </tr> 
+        </thead> 
+ 
+        <tbody> 
+            <?php foreach($impresoras as $ver) { ?> 
+                <tr> 
+                    <td> <?php echo $ver['idImpresoras'] ?> </td> 
+                    <td> <?php echo $ver['modelo'] ?> </td> 
+                    <td> <?php echo $ver['idInsumos'] ?> </td> 
+            <?php } ?> 
+                </tr> 
+        </tbody> 
+    </table> 
+</div> 
